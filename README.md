@@ -27,6 +27,10 @@ During training, randomly zeroes some of the elements of the input tensor with p
 
 This has proven to be an effective technique for regularization and preventing the co-adaptation of neurons as described in the paper Improving neural networks by preventing co-adaptation of feature detectors .
 
+## loss.backward()
+
+The backward pass consists of computing the local gradients and dLoss/dWeights using the chain rule to backpropagate the error.
+
 ### Load Tensorboard in google colab
 
 ```python
@@ -43,6 +47,10 @@ This has proven to be an effective technique for regularization and preventing t
 
 https://stackoverflow.com/questions/48001598/why-do-we-need-to-call-zero-grad-in-pytorch
 
+
+### GAN hacks
+
+https://github.com/soumith/ganhacks
 
 ### Questions
 
